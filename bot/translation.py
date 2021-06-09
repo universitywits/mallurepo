@@ -5,13 +5,13 @@
 class Translation(object):
     
     START_TEXT = """<b>Hey 👋 {}!!</b>
-<i>Am Just A Advance Auto Filter Bot for Team MalluMovies....😉
+<b><i>Am Just A Advance Auto Filter Bot for Team MalluMovies....😉
 
 Am Working only in MalluMovies Group's  🔥🔥😝
 
 For More Details Click Help Button Below..
 @WhitE_DeViL09
-</i>"""    
+</i></b>"""    
     
     HELP_TEXT = """
 <b><i><u>How To Use Me!?</u></i></b>
@@ -43,7 +43,7 @@ For More Details Click Help Button Below..
             
             -> <code>Status</code> - Button Will Shows The Stats Of Your Channel
             
-@WhitE_DeviL09
+<b>@WhitE_DeviL09<\b>
 """
     
     ABOUT_TEXT = """<b>➥ Name</b> : <code> MM Auto Filter Bot</code>
