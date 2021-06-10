@@ -38,7 +38,7 @@ async def start(bot, update):
                         [
                             InlineKeyboardButton
                                 (
-                                    'Developer', url="https://t.me/WhitE_DeviL09"
+                                    '⭕ Our all Channel Links ⭕', url="https://t.me/MalluMovies_Links"
                                 )
                         ]
                     ]
@@ -57,7 +57,7 @@ async def start(bot, update):
                         [
                             InlineKeyboardButton
                                 (
-                                    'Developer', url="https://t.me/WhitE_DeviL09"
+                                    '⭕ Our all Channel Links ⭕', url="https://t.me/MalluMovies_Links"
                                 )
                         ]
                     ]
@@ -76,7 +76,7 @@ async def start(bot, update):
                         [
                             InlineKeyboardButton
                                 (
-                                    'Developer', url="https://t.me/WhitE_DeviL09"
+                                    '⭕ Our all Channel Links ⭕', url="https://t.me/MalluMovies_Links"
                                 )
                         ]
                     ]
