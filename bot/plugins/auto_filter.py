@@ -205,7 +205,7 @@ async def auto_filter(bot, update):
                 chat_id = update.chat.id,
                 text=f"<b>Found</b> {(len_results)} <b>Results For Your Query:</b> <code>{query}</code>"
 
-                \n<b>Ⓜ️ 𝘛𝘌𝘈𝘔 𝘔𝘈𝘓𝘓𝘜 𝘔𝘖𝘝𝘐𝘌𝘚</b>",
+                \n<b>"Ⓜ️ 𝘛𝘌𝘈𝘔 𝘔𝘈𝘓𝘓𝘜 𝘔𝘖𝘝𝘐𝘌𝘚</b>",
                 reply_markup=reply_markup,
                 parse_mode="html",
                 reply_to_message_id=update.message_id
