@@ -142,7 +142,7 @@ async def cb_navg(bot, update: CallbackQuery):
     
     reply_markup = InlineKeyboardMarkup(temp_results)
     
-    text=f"<b><i>Found</i></b> <code>{leng}</code> <b><i>Results For Your Query:</i></b> <code>{query}</code> 👇"
+    text=f"<b><i>Found</i></b> <b><code>{leng}</code></b> <b><i>Results For Your Query:</i></b> <code>{query}</code> 👇 \n\n<b>Ⓜ️ 𝘛𝘌𝘈𝘔 𝘔𝘈𝘓𝘓𝘜 𝘔𝘖𝘝𝘐𝘌𝘚</b>"
 
      
         
