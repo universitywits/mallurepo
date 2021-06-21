@@ -65,7 +65,7 @@ class Translation(object):
 
 📢 മല്ലു മൂവിസ് ഗ്രൂപ്പിൽ നിങ്ങൾ ചോദിക്കുന്ന സിനിമകൾ ലഭിക്കണം എന്നുണ്ടെങ്കിൽ നിങ്ങൾ താഴെ കൊടുത്തിട്ടുള്ള ചാനലിൽ ജോയിൻ ചെയ്യണം. ജോയിൻ ചെയിത ശേഷം വീണ്ടും ഇവിടെ വന്ന് <b><a href='{tryagain}'>Try Again</a></b> ബട്ടനിൽ അമർത്തി Start അമർത്തിയാൽ നിങ്ങൾക്ക് ഞാൻ ആ സിനിമ അയച്ചു തരുന്നതാണ്..!!😍
 
-🔊In Order To Get The Movie Requested By You in Our Groups, You Will Have To Join Our Official Channel First. After That, Click on the <b><a href='{tryagain}'>Try again</a> Button below. I'll Send You That Movie 🙈
+🔊In Order To Get The Movie Requested By You in Our Groups, You Will Have To Join Our Official Channel First. After That, Click on the <b><a href='{tryagain}'>Try again</a></b> Button below. I'll Send You That Movie 🙈
 
 👇 𝖩𝖮𝖨𝖭 𝖳𝖧𝖨𝖲 𝖢𝖧𝖠𝖭𝖭𝖤𝖫 & 𝖳𝖱𝖸 👇
 
