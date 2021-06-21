@@ -180,5 +180,6 @@ async def start_not_joined(bot, update):
             ),
             reply_markup=reply_markup,
             parse_mode="html",
-            reply_to_message_id=update.message_id
+            reply_to_message_id=update.message_id,
+            disable_web_page_preview=True
         )    
