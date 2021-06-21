@@ -49,6 +49,14 @@ def LOGGER(name: str) -> logging.Logger:
     return logging.getLogger(name)
 
 async def is_joined(_, client, update):
+    try:
+        file_uid = update.command[1]
+    except IndexError:
+        file_uid = False
+
+    if not file_uid:
+        return True
+
     if not AUTH_CHANNEL:
         return True
     try:
