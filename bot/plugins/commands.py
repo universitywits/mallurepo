@@ -9,7 +9,7 @@ from bot.database import Database # pylint: disable=import-error
 
 db = Database()
 
-@Client.on_message(filters.command(["start"]) & filters.private, group=1, filters.joined)
+@Client.on_message(filters.command(["start"]) & filters.private & filters.joined, group=1)
 async def start(bot, update):
     
     try:
