@@ -2,9 +2,10 @@
 # -*- coding: utf-8 -*-
 # (c) @SpEcHIDe
 
+import sys
 from pyrogram import Client, __version__
 
-from . import API_HASH, APP_ID, LOGGER, BOT_TOKEN 
+from . import API_HASH, APP_ID, LOGGER, BOT_TOKEN, AUTH_CHANNEL
 
 from .user import User
 
@@ -29,6 +30,17 @@ class Bot(Client):
     async def start(self):
         await super().start()
         bot_details = await self.get_me()
+        
+        if AUTH_CHANNEL:
+            try:
+                link = await self.export_chat_invite_link(AUTH_CHANNEL)
+                self.invitelink = link
+            except Exception as a:
+                print(a)
+                self.LOGGER(__name__).warning("Bot can't Export Invite link from Force Sub Channel!")
+                self.LOGGER(__name__).warning("Please Double check the AUTH_CHANNEL value and Make sure Bot is Admin in channel with Invite Users via Link Permission")
+                sys.exit()
+
         self.set_parse_mode("html")
         self.LOGGER(__name__).info(
             f"@{bot_details.username}  started! "
