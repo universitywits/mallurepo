@@ -155,13 +155,13 @@ async def start_not_joined(bot, update):
     except IndexError:
         file_uid = False
     if file_uid:
-        tryagain = f'https://t.me/{client.username}?start={file_uid}'
+        tryagain = f'https://t.me/{bot.username}?start={file_uid}'
         reply_markup = InlineKeyboardMarkup(
             [
                 [
                     InlineKeyboardButton(
                         text = '♀️ᴊᴏɪɴ Cʜᴀɴɴᴇʟ♀️',
-                        url = client.invitelink
+                        url = bot.invitelink
                     )
                 ],
                 [
@@ -176,7 +176,7 @@ async def start_not_joined(bot, update):
             chat_id=update.chat.id,
             text=Translation.FORCE_SUBTEXT.format(
                 tryagain = tryagain,
-                invitelink = client.invitelink
+                invitelink = bot.invitelink
             ),
             reply_markup=reply_markup,
             parse_mode="html",
