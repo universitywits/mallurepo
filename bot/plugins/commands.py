@@ -90,7 +90,7 @@ async def start(bot, update):
 
     buttons = [[
         InlineKeyboardButton('💁 Developer', url='https://t.me/WhitE_DeviL09'),
-        InlineKeyboardButton('Source Code 🧾', url ='https://github.com/DreamCatcher96/Adv-Auto-Filter-Bot-V2')
+        InlineKeyboardButton('Source Code 🧾', url ='https://github.com/Alberteinsteintg/Adv-Auto-Filter-Bot-V2')
     ],[
         InlineKeyboardButton('Support 🛠', url='https://t.me/MalluMovies_Links')
     ],[
@@ -166,7 +166,7 @@ async def start_not_joined(bot, update):
                 ],
                 [
                     InlineKeyboardButton(
-                        text = 'Try Again',
+                        text = '🔥 Tʀʏ Aɢᴀɪɴ 🔥',
                         url = tryagain
                     )
                 ]
