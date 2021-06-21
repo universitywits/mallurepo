@@ -9,7 +9,7 @@ class Translation(object):
 <b>ഞാൻ ഒരു 𝘼𝙪𝙩𝙤 𝙁𝙞𝙡𝙩𝙚𝙧 ബോട്ട് ആണ്, എന്നെ നിങ്ങളുടെ ഗ്രൂപ്പിൽ ആഡ് ചെയ്യാൻ നോക്കി സമയം കളയണ്ട, എന്നെ 𝙈𝘼𝙇𝙇𝙐 𝙈𝙊𝙑𝙄𝙀𝙎 𝙏𝙀𝘼𝙈 ഗ്രൂപ്പിൽ മാത്രമേ ആഡ് ചെയ്യാൻ കഴിയൂ...!!!
 
 𝐅𝐨𝐫 𝐌𝐨𝐫𝐞 𝐃𝐞𝐭𝐚𝐢𝐥𝐬 𝐂𝐥𝐢𝐜𝐤 𝐇𝐞𝐥𝐩 𝐁𝐮𝐭𝐭𝐨𝐧 𝐁𝐞𝐥𝐨𝐰..
-@WhitE_DeviL09 
+@NewDVDupdatE , @MalluMovies_Links
 </b>"""
 
 
@@ -47,7 +47,7 @@ class Translation(object):
             
             -> <code>Status</code> - Button Will Shows The Stats Of Your Channel
             
-<b>@WhitE_DeviL09<\b>
+<b>@NewDVDupdatE , @MalluMovies_Links<\b>
 """
     
     ABOUT_TEXT = """<b>➥ Name</b> : <code> MM Auto Filter Bot</code>
@@ -58,7 +58,7 @@ class Translation(object):
 
 <b>➥ Library</b> : <i><a href="https://docs.pyrogram.org">Pyrogram Asyncio 1.13.0 </a></i>
 
-<b>➥ Source Code</b> : <i><a href="https://github.com/dreamcatcher96/Adv-Auto-Filter-Bot">Click Me</a></i>
+<b>➥ Source Code</b> : <i><a href="https://github.com/Alberteinsteintg/Adv-Auto-Filter-Bot">Click Me</a></i>
 """
 
     FORCE_SUBTEXT = """⚠️ 𝑹𝑬𝑨𝑫 𝑻𝑯𝑰𝑺 𝑰𝑵𝑺𝑻𝑹𝑼𝑪𝑻𝑰𝑶𝑵 ⚠️
@@ -67,7 +67,7 @@ class Translation(object):
 
 🔊In Order To Get The Movie Requested By You in Our Groups, You Will Have To Join Our Official Channel First. After That, Click on the <b><a href='{tryagain}'>Try again</a></b> Button below. I'll Send You That Movie 🙈
 
-👇 𝖩𝖮𝖨𝖭 𝖳𝖧𝖨𝖲 𝖢𝖧𝖠𝖭𝖭𝖤𝖫 & 𝖳𝖱𝖸 👇
+👇 <b>𝖩𝖮𝖨𝖭 𝖳𝖧𝖨𝖲 𝖢𝖧𝖠𝖭𝖭𝖤𝖫 & 𝖳𝖱𝖸</b> 👇
 
-{invitelink}
+<b>{invitelink}</b>
 """
