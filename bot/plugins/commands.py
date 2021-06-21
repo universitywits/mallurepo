@@ -165,7 +165,7 @@ async def start_not_joined(bot, update):
                     )
                 ],
                 [
-                    InlineKeyboardButton (
+                    InlineKeyboardButton(
                         text = 'Try Again',
                         url = tryagain
                     )
