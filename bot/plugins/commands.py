@@ -2,14 +2,14 @@
 # -*- coding: utf-8 -*-
 # (c) @AlbertEinsteinTG
 
-from pyrogram import filters, Client
+from pyrogram import Client
 from pyrogram.types import InlineKeyboardButton, InlineKeyboardMarkup, CallbackQuery
-from bot import Translation # pylint: disable=import-error
+from bot import Translation, filters # pylint: disable=import-error
 from bot.database import Database # pylint: disable=import-error
 
 db = Database()
 
-@Client.on_message(filters.command(["start"]) & filters.private, group=1)
+@Client.on_message(filters.command(["start"]) & filters.private & filters.joined, group=1)
 async def start(bot, update):
     
     try:
@@ -146,3 +146,39 @@ async def about(bot, update):
         parse_mode="html",
         reply_to_message_id=update.message_id
     )
+
+@Client.on_message(filters.command(["start"]) & filters.private, group=1)
+async def start_not_joined(bot, update):
+
+    try:
+        file_uid = update.command[1]
+    except IndexError:
+        file_uid = False
+    if file_uid:
+        tryagain = f'https://t.me/{client.username}?start={file_uid}'
+        reply_markup = InlineKeyboardMarkup(
+            [
+                [
+                    InlineKeyboardButton(
+                        text = '♀️ᴊᴏɪɴ Cʜᴀɴɴᴇʟ♀️',
+                        url = client.invitelink
+                    )
+                ],
+                [
+                    InlineKeyboardButton(
+                        text = 'Try Again',
+                        url = tryagain
+                    )
+                ]
+            ]
+        )
+        await bot.send_message(
+            chat_id=update.chat.id,
+            text=Translation.FORCE_SUBTEXT.format(
+                tryagain = tryagain,
+                invitelink = client.invitelink
+            ),
+            reply_markup=reply_markup,
+            parse_mode="html",
+            reply_to_message_id=update.message_id
+        )    
