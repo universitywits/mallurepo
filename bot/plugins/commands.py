@@ -160,7 +160,7 @@ async def start_not_joined(bot, update):
             [
                 [
                     InlineKeyboardButton(
-                        text = '♀️ᴊᴏɪɴ Cʜᴀɴɴᴇʟ♀️',
+                        text = '♀️Jᴏɪɴ Oᴜʀ Cʜᴀɴɴᴇʟ♀️',
                         url = bot.invitelink
                     )
                 ],
