@@ -35,7 +35,7 @@ async def start(bot, update):
                 reply_to_message_id=update.message_id
             )
             await msg.edit_message_caption(
-                caption = f"<i>{msg.document.file_name}</i>",
+                caption = f"<b>{msg.document.file_name}</b>",
                 reply_markup=InlineKeyboardMarkup(
                     [
                         [
@@ -57,7 +57,7 @@ async def start(bot, update):
                 parse_mode="html"
             )
             await msg.edit_message_caption(
-                caption = f"<i>{msg.video.file_name}</i>",
+                caption = f"<b>{msg.video.file_name}</b>",
                 reply_markup=InlineKeyboardMarkup(
                     [
                         [
@@ -79,7 +79,7 @@ async def start(bot, update):
                 parse_mode="html"
             )
             await msg.edit_message_caption(
-                caption = f"<i>{msg.audio.file_name}</i>",
+                caption = f"<b>{msg.audio.file_name}</b>",
                 reply_markup=InlineKeyboardMarkup(
                     [
                         [
