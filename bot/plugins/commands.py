@@ -53,7 +53,7 @@ async def start(bot, update):
             msg = await bot.send_video(
                 chat_id=update.chat.id,
                 video = file_id,
-                caption = caption,
+                caption = '',
                 parse_mode="html"
             )
             await msg.edit_message_caption(
@@ -75,7 +75,7 @@ async def start(bot, update):
             msg = await bot.send_audio(
                 chat_id=update.chat.id,
                 audio = file_id,
-                caption = caption,
+                caption = '',
                 parse_mode="html"
             )
             await msg.edit_message_caption(
