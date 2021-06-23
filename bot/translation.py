@@ -47,23 +47,23 @@ class Translation(object):
             
             -> <code>Status</code> - Button Will Shows The Stats Of Your Channel
             
-<b>@NewDVDupdatE</b> , <b>@MalluMovies_Links<\b>
+<b>@NewDVDupdatE</b> , <b>@MalluMovies_Links</b>
 """
     
-    ABOUT_TEXT = """<b>⭕ Name</b> : <code><b>MM Auto Filter Bot</b></code>
+    ABOUT_TEXT = """<b>⭕ Name</b> : <b>MM Auto Filter Bot</b>
     
-<b>⭕ Creator</b> : <b><i><a href="https://t.me/WhitE_DeviL09">WhitE_DeviL09</a></i></b>
+<b>⭕ Creator</b> : <b><a href="https://t.me/WhitE_DeviL09">@WhitE_DeviL09</a></b>
 
-<b>⭕ Language</b> : <code>Python3</code>
+<b>⭕ Language</b> : <b>Python3</b>
 
-<b>⭕ Library</b> : <i><a href="https://docs.pyrogram.org">Pyrogram Asyncio 1.13.0 </a></i>
+<b>⭕ Library</b> : <b><a href="https://docs.pyrogram.org">Pyrogram Asyncio 1.13.0 </a></b>
 
-<b>⭕ Source Code</b> : <i><a href="https://github.com/Alberteinsteintg/Adv-Auto-Filter-Bot">Click Me</a></i>
 """
+
 
     FORCE_SUBTEXT = """⚠️ 𝑹𝑬𝑨𝑫 𝑻𝑯𝑰𝑺 𝑰𝑵𝑺𝑻𝑹𝑼𝑪𝑻𝑰𝑶𝑵 ⚠️
 
-📢 <i><b>Hey 👋 Bro</b></i> <i>മല്ലുമൂവിസ് ഗ്രൂപ്പിൽ നിങ്ങൾ ചോദിക്കുന്ന സിനിമകൾ ലഭിക്കണം എന്നുണ്ടെങ്കിൽ നിങ്ങൾ താഴെ കൊടുത്തിട്ടുള്ള ചാനലിൽ ജോയിൻ ചെയ്യണം. ജോയിൻ ചെയിത ശേഷം വീണ്ടും ഇവിടെ വന്ന് <b><a href='{tryagain}'>Try Again</a></b> ബട്ടനിൽ അമർത്തി <b>Start</b> അമർത്തിയാൽ നിങ്ങൾക്ക് ഞാൻ ആ സിനിമ അയച്ചു തരുന്നതാണ്..!!</i>😍
+<i><b>Hey 👋 Bro</b></i> <i>മല്ലുമൂവിസ് ഗ്രൂപ്പിൽ നിങ്ങൾ ചോദിക്കുന്ന സിനിമകൾ ലഭിക്കണം എന്നുണ്ടെങ്കിൽ നിങ്ങൾ താഴെ കൊടുത്തിട്ടുള്ള ചാനലിൽ ജോയിൻ ചെയ്യണം. ജോയിൻ ചെയിത ശേഷം വീണ്ടും ഇവിടെ വന്ന് <b><a href='{tryagain}'>Try Again</a></b> എന്ന ബട്ടനിൽ അമർത്തി <b>Start</b> അമർത്തിയാൽ നിങ്ങൾക്ക് ഞാൻ ആ സിനിമ അയച്ചു തരുന്നതാണ്..!!</i>😍
 
 🔊In Order To Get The Movie Requested By You in Our Groups, You Will Have To Join Our Official Channel First. After That, Click on the <b><a href='{tryagain}'>Try Again</a></b> Button below. I'll Send You That Movie 🙈
 
