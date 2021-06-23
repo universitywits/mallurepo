@@ -27,12 +27,15 @@ async def start(bot, update):
         
         if file_type == "document":
         
-            await bot.send_document(
+            msg = await bot.send_document(
                 chat_id=update.chat.id,
                 document = file_id,
-                caption = caption,
+                caption = '',
                 parse_mode="html",
-                reply_to_message_id=update.message_id,
+                reply_to_message_id=update.message_id
+            )
+            await msg.edit_message_caption(
+                caption = f"<b>{msg.document.file_name}</b>",
                 reply_markup=InlineKeyboardMarkup(
                     [
                         [
@@ -47,11 +50,14 @@ async def start(bot, update):
 
         elif file_type == "video":
         
-            await bot.send_video(
+            msg = await bot.send_video(
                 chat_id=update.chat.id,
                 video = file_id,
-                caption = caption,
-                parse_mode="html",
+                caption = '',
+                parse_mode="html"
+            )
+            await msg.edit_message_caption(
+                caption = f"<b>{msg.video.file_name}</b>",
                 reply_markup=InlineKeyboardMarkup(
                     [
                         [
@@ -66,11 +72,14 @@ async def start(bot, update):
             
         elif file_type == "audio":
         
-            await bot.send_audio(
+            msg = await bot.send_audio(
                 chat_id=update.chat.id,
                 audio = file_id,
-                caption = caption,
-                parse_mode="html",
+                caption = '',
+                parse_mode="html"
+            )
+            await msg.edit_message_caption(
+                caption = f"<b>{msg.audio.file_name}</b>",
                 reply_markup=InlineKeyboardMarkup(
                     [
                         [
