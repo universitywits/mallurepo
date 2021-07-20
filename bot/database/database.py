@@ -1,7 +1,6 @@
-from datetime import datetime
+import re
 import motor.motor_asyncio # pylint: disable=import-error
-from bot import DB_URI
-
+from bot import DB_URI # pylint: disable=import-error
 
 class Singleton(type):
     __instances__ = {}
@@ -21,7 +20,6 @@ class Database(metaclass=Singleton):
         self.col = self.db["Main"]
         self.acol = self.db["Active_Chats"]
         self.fcol = self.db["Filter_Collection"]
-        self.users  = self.db.bot_users
         
         self.cache = {}
         self.acache = {}
@@ -33,10 +31,6 @@ class Database(metaclass=Singleton):
         """
         await self.fcol.create_index([("file_name", "text")])
 
-    async def add_user(self, user_id: int) -> None:
-        await self.users.update_one({"user_id": user_id}, {"$set": {
-            "joined": datetime.now()
-        }}, upsert=True)
 
     def new_chat(self, group_id, channel_id, channel_name):
         """
@@ -302,6 +296,7 @@ class Database(metaclass=Singleton):
         return True
 
 
+
     async def del_active(self, group_id: int, channel_id: int):
         """
         A funtion to delete a channel from active chat colletion in db
@@ -349,6 +344,7 @@ class Database(metaclass=Singleton):
         connection = await self.acol.find_one({"_id": group_id})
 
         if connection:
+            self.acache[str(group_id)] = connection
             return connection
         return False
 
@@ -437,10 +433,7 @@ class Database(metaclass=Singleton):
         A Funtion to fetch all similar results for a keyowrd
         from using text index
         """
-        await self.create_index()
 
-        chat = await self.find_chat(group_id)
-        chat_accuracy = float(chat["configs"].get("accuracy", 0.80))
         achats = await self.find_active(group_id)
         
         achat_ids=[]
@@ -451,22 +444,14 @@ class Database(metaclass=Singleton):
             achat_ids.append(chats.get("chat_id"))
         
         filters = []
+        
+        pattern = keyword.lower().strip().replace(' ','.*')
+        raw_pattern = r"\b{}\b".format(pattern)
+        regex = re.compile(raw_pattern, flags=re.IGNORECASE)
                 
-        pipeline= {
-            '$text':{'$search': keyword}
-        }
-        
-        
-        db_list = self.fcol.find(
-            pipeline, 
-            {'score': {'$meta':'textScore'}} # Makes A New Filed With Match Score In Each Document
-        )
-
-        db_list.sort([("score", {'$meta': 'textScore'})]) # Sort all document on the basics of the score field
+        db_list = self.fcol.find({"group_id": group_id,"file_name": regex})
         
         for document in await db_list.to_list(length=600):
-            if document["score"] < chat_accuracy:
-                continue
             
             if document["chat_id"] in achat_ids:
                 filters.append(document)
@@ -491,7 +476,7 @@ class Database(metaclass=Singleton):
             file_id = file.get("file_id")
             file_name = file.get("file_name")
             file_type = file.get("file_type")
-            file_caption = file.get("caption")
+            file_caption = file.get("file_caption")
         return file_id, file_name, file_caption, file_type
 
 
