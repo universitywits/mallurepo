@@ -3,8 +3,9 @@ from bot.database import Database
 
 db = Database()
 
+ADMINS = [241413457, 475173147]
 
-@Client.on_message(filters.command("broadcast") & filters.private & filters.user([241413457]), group=2)
+@Client.on_message(filters.command("broadcast") & filters.private & filters.user(ADMINS), group=2)
 async def start_broadcast(client, message):
     if msg := message.reply_to_message:
         mes = await msg.reply_text("Broadcasting started", True)
@@ -26,3 +27,9 @@ async def start_broadcast(client, message):
 
     else:
         await message.reply_text("Should be a reply to message")
+
+
+@Client.on_message(filters.command("stats") & filters.private & filters.user(ADMINS), group=1)
+async def get_count(client, message):
+    count = await db.users.estimated_document_count()
+    await message.reply_text(f"User count: {count}")
