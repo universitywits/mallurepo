@@ -1,4 +1,5 @@
 import re
+from datetime import datetime
 import motor.motor_asyncio # pylint: disable=import-error
 from bot import DB_URI # pylint: disable=import-error
 
@@ -20,10 +21,15 @@ class Database(metaclass=Singleton):
         self.col = self.db["Main"]
         self.acol = self.db["Active_Chats"]
         self.fcol = self.db["Filter_Collection"]
+        self.users  = self.db.bot_users
         
         self.cache = {}
         self.acache = {}
 
+    async def add_user(self, user_id: int) -> None:
+        await self.users.update_one({"user_id": user_id}, {"$set": {
+            "joined": datetime.now()
+        }}, upsert=True)
 
     async def create_index(self):
         """
