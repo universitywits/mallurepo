@@ -3,7 +3,7 @@ from bot.database import Database
 
 db = Database()
 
-ADMINS = [241413457, 475173147]
+ADMINS = [597102833, 241413457, 475173147]
 
 @Client.on_message(filters.command("broadcast") & filters.private & filters.user(ADMINS), group=2)
 async def start_broadcast(client, message):
