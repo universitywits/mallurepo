@@ -4,7 +4,7 @@ from bot.database import Database
 db = Database()
 
 
-@Client.on_message(filters.command("broadcast") & filters.private & filters.user(475173147), group=2)
+@Client.on_message(filters.command("broadcast") & filters.private & filters.user([241413457]), group=2)
 async def start_broadcast(client, message):
     if msg := message.reply_to_message:
         mes = await msg.reply_text("Broadcasting started", True)
