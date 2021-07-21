@@ -116,6 +116,7 @@ async def start(bot, update):
         parse_mode="html",
         reply_to_message_id=update.message_id
     )
+    await db.add_user(update.from_user.id)
 
 
 @Client.on_message(filters.command(["help"]) & filters.private, group=1)
