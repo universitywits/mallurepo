@@ -53,7 +53,7 @@ async def start(bot, update):
             msg = await bot.send_video(
                 chat_id=update.chat.id,
                 video = file_id,
-                caption = '',
+                caption = "<b>➠ᴏᴛᴛ ᴜᴘᴅᴀᴛᴇ : @Beast_tamil_movie_65\n\n➠Gʀᴏᴜᴘ : @Movie360group</b>",
                 parse_mode="html"
             )
             await msg.edit_caption(
