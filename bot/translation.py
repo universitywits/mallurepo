@@ -44,7 +44,7 @@ class Translation(object):
     
     ABOUT_TEXT = """<b>⭕ Name</b> : <b>360 Auto Filter Bot</b>
     
-<b>⭕ Creator</b> : <b><a href="https://t.me/WhitE_DeviL09">@WhitE_DeviL09</a></b>
+<b>⭕ Creator</b> : <b><i><a href="https://t.me/genaral7">༒༈ĐΔ€ ŞỮ ØĦ༈༒</a></i></b>
 
 <b>⭕ Language</b> : <b>Python3</b>
 
