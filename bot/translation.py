@@ -39,16 +39,15 @@ class Translation(object):
             
             -> <code>Status</code> - Button Will Shows The Stats Of Your Channel
             
-<b>@NewDVDupdatE</b> , <b>@MalluMovies_Links</b>
+ <b>@Movie360group</b>
 """
     
     ABOUT_TEXT = """<b>⭕ Name</b> : <b>360 Auto Filter Bot</b>
     
 <b>⭕ Creator</b> : <b><i><a href="https://t.me/genaral7">༒༈ĐΔ€ ŞỮ ØĦ༈༒</a></i></b>
 
-<b>⭕ Language</b> : <b>Python3</b>
-
 <b>⭕ Library</b> : <b><a href="https://docs.pyrogram.org">Pyrogram Asyncio 1.13.0 </a></b>
+
 <b>⭕ Source Code</b> : <i><a href="https://t.me/Movies360help/68">Click Me</a></i>
 """
 
