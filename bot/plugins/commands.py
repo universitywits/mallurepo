@@ -82,7 +82,7 @@ async def start(bot, update):
                         [
                             InlineKeyboardButton
                                 (
-                                    '⭕ OUR CHANNEL LINKS ⭕', url="https://t.me/MalluMovies_Links"
+                                    '🌈ηεϖ ʍσѵίες🌈', url='https://t.me/joinchat/ME-pgJrySWg1ZDg1"
                                 )
                         ]
                     ]
