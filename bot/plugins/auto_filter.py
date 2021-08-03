@@ -204,7 +204,7 @@ async def auto_filter(bot, update):
             await bot.send_photo(
                 photo="https://telegra.ph/file/d15a009e546a7acc855da.jpg",
                 chat_id = update.chat.id,
-                caption=f"<b>Found</b> <b>{(len_results)}</b> <b>Results For Your Query:</b> <code>{query}</code> 👇 \n\n<b>Ⓜ️ 𝘛𝘌𝘈𝘔 𝘔𝘈𝘓𝘓𝘜 𝘔𝘖𝘝𝘐𝘌𝘚</b>",
+                caption=f"<b>Found</b> <b>{(len_results)}</b> <b>Results For Your Query:</b> <code>{query}</code> 👇 \n\n🔰360 ᗰOᐯIᗴՏ🔰\n<a href= https://t.me/joinchat/ME-pgJrySWg1ZDg1>ɴᴇᴡ Mᴏᴠɪᴇs കിട്ടുന്നില്ലെങ്കിൽ ഇവിടെ ക്ലിക്ക് ചെയ്യുക</a>",
                 reply_markup=reply_markup,
                 parse_mode="html",
                 reply_to_message_id=update.message_id
