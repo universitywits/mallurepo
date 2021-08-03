@@ -95,12 +95,13 @@ async def start(bot, update):
         return
 
     buttons = [[
-        InlineKeyboardButton('👥 𝐆𝐑𝐎𝐔𝐏 - 𝟏', url='https://t.me/joinchat/CVCri_SxlmxiZGI1'),
-        InlineKeyboardButton('𝐆𝐑𝐎𝐔𝐏 - 𝟐 👥', url ='https://t.me/joinchat/MDKvNo007xM4NWQ1')
+        InlineKeyboardButton('🌈Ɠɾσυρ🌈', url='https://t.me/movie360group'),
+        InlineKeyboardButton('🌈Ƈԋαɳɳҽʅ🌈', url ='https://t.me/beast_tamil_movie_65')
     ],[
-        InlineKeyboardButton('⭕ 𝐎𝐔𝐑 𝐂𝐇𝐀𝐍𝐍𝐄𝐋 𝐋𝐈𝐍𝐊𝐒 ⭕', url='https://t.me/joinchat/2yeZNjQ9osg0MzQ1')
+        InlineKeyboardButton('🌈360 հεʆԹ🌈', url='http://t.me/movies360help'),
+        InlineKeyboardButton('🌈ηεϖ ʍσѵίες🌈', url='http://t.me/joinchat/ME-pgJrySWg1ZDg1')
     ],[
-        InlineKeyboardButton('🖥️ 𝐍𝐄𝐖 𝐎𝐓𝐓 𝐔𝐏𝐃𝐀𝐓𝐄𝐒 🖥️', url='https://t.me/joinchat/AAAAAE-_9UxMnUfIe4l0sQ')
+
     ]]
     
     reply_markup = InlineKeyboardMarkup(buttons)
