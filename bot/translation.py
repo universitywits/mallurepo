@@ -42,14 +42,14 @@ class Translation(object):
 <b>@NewDVDupdatE</b> , <b>@MalluMovies_Links</b>
 """
     
-    ABOUT_TEXT = """<b>⭕ Name</b> : <b>MM Auto Filter Bot</b>
+    ABOUT_TEXT = """<b>⭕ Name</b> : <b>360 Auto Filter Bot</b>
     
 <b>⭕ Creator</b> : <b><a href="https://t.me/WhitE_DeviL09">@WhitE_DeviL09</a></b>
 
 <b>⭕ Language</b> : <b>Python3</b>
 
 <b>⭕ Library</b> : <b><a href="https://docs.pyrogram.org">Pyrogram Asyncio 1.13.0 </a></b>
-
+<b>⭕ Source Code</b> : <i><a href="https://t.me/Movies360help/68">Click Me</a></i>
 """
 
     FORCE_SUBTEXT = """⚠️ 𝑹𝑬𝑨𝑫 𝑻𝑯𝑰𝑺 𝑰𝑵𝑺𝑻𝑹𝑼𝑪𝑻𝑰𝑶𝑵 ⚠️
