@@ -38,7 +38,7 @@ async def start(bot, update):
                         [
                             InlineKeyboardButton
                                 (
-                                     '🌈ηεϖ ʍσѵίες🌈', url='http://t.me/joinchat/ME-pgJrySWg1ZDg1"
+                                    '🌈ηεϖ ʍσѵίες🌈', url='https://t.me/joinchat/ME-pgJrySWg1ZDg1"
                                 )
                         ]
                     ]
@@ -60,7 +60,7 @@ async def start(bot, update):
                         [
                             InlineKeyboardButton
                                 (
-                                    '🌈ηεϖ ʍσѵίες🌈', url='http://t.me/joinchat/ME-pgJrySWg1ZDg1"
+                                    '🌈ηεϖ ʍσѵίες🌈', url='https://t.me/joinchat/ME-pgJrySWg1ZDg1"
                                 )
                         ]
                     ]
