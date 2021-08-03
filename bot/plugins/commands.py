@@ -38,7 +38,7 @@ async def start(bot, update):
                         [
                             InlineKeyboardButton
                                 (
-                                    '⭕ OUR CHANNEL LINKS ⭕', url="https://t.me/MalluMovies_Links"
+                                    '🌈ηεϖ ʍσѵίες🌈', url='http://t.me/joinchat/ME-pgJrySWg1ZDg1"
                                 )
                         ]
                     ]
@@ -60,7 +60,7 @@ async def start(bot, update):
                         [
                             InlineKeyboardButton
                                 (
-                                    '⭕ OUR CHANNEL LINKS ⭕', url="https://t.me/MalluMovies_Links"
+                                    '🌈ηεϖ ʍσѵίες🌈', url='http://t.me/joinchat/ME-pgJrySWg1ZDg1"
                                 )
                         ]
                     ]
