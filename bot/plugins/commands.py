@@ -32,10 +32,7 @@ async def start(bot, update):
                 document = file_id,
                 caption = "<b>➠ᴏᴛᴛ ᴜᴘᴅᴀᴛᴇ : @Beast_tamil_movie_65\n\n➠Gʀᴏᴜᴘ : @Movie360group</b>",
                 parse_mode="html",
-                reply_to_message_id=update.message_id
-            )
-            await msg.edit_caption(
-                caption = f"<b>{msg.document.file_name}</b>",
+                reply_to_message_id=update.message_id,
                 reply_markup=InlineKeyboardMarkup(
                     [
                         [
